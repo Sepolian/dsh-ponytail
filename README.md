@@ -89,6 +89,10 @@ npm run verify:package
 
 The verifier checks isolated source preparation and pack lifecycles, archive layout and upstream hashes, a clean consumer install, missing/corrupt asset rejection, official Web profile installation and startup, session isolation, commands, skills, authenticated HTTP access, and incompatible peer rejection. It uses disposable profiles and a deterministic model transport. Reports, logs, caches, and tarballs are written under `.runtime/` and excluded from Git and package contents.
 
+## Acknowledgements
+
+This adapter bundles unmodified [Ponytail](https://github.com/DietrichGebert/ponytail) assets by DietrichGebert and contributors, and uses native APIs provided by [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness). Development research drew on [WODE25500's PR #743](https://github.com/DietrichGebert/ponytail/pull/743) for upstream instruction reuse, [redtidev1918's PR #792](https://github.com/DietrichGebert/ponytail/pull/792) for packaging and native command integration, [MengYuil's adapter](https://github.com/MengYuil/dsh-ponytail/tree/9b03d3ffcff96b7e8e4ff749802b04cca23e1b51) for per-session mode state and the skill-command flow, [Wenaixi's adapter](https://github.com/Wenaixi/dsh-ponytail/tree/0cc805062e92e790d51d1758e1c6394d04e40b86) for lifecycle mapping and DSH API adaptation, and [gongyijie85's adapter](https://github.com/gongyijie85/dsh-ponytail/tree/0a837a6bc5849955dc07b4be7d40ca95e60fa459) for filesystem skill discovery.
+
 ## License
 
 The adapter is licensed under [MIT](LICENSE). Bundled Ponytail assets retain their [upstream license and copyright notice](vendor/ponytail/LICENSE).
